@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:orientation="vertical"
+    tools:context="com.shumilkin.chatapp.Chat">
+
+    <TextView
+        android:id="@+id/chatWith_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+
+        android:background="@android:color/holo_orange_dark"
+
+        android:textColor="@android:color/white"
+        tools:text="Username"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="0dp"
+
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/message_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="2dp"
+        android:gravity="bottom" />
+</LinearLayout>

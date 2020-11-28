@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "497318134560",
+    "firebase_url": "https://custom-messanger.firebaseio.com",
+    "project_id": "custom-messanger",
+    "storage_bucket": "custom-messanger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497318134560:android:083d7a628a77d186630d45",
+        "android_client_info": {
+          "package_name": "com.shumilkin.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497318134560-tiqhmundcl8soqg7hbrgatg11fh2gnp5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhJ2s__H4tw9aWu9_Ny9-I3Yzawb6gGSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497318134560-tiqhmundcl8soqg7hbrgatg11fh2gnp5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

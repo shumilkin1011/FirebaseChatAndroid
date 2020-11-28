@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Login" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/loginPageTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/main_logo"
+            android:scaleType="center"
+            app:srcCompat="@drawable/loginpage_top" />
+
+        <EditText
+            android:id="@+id/username"
+
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/loginPageTop"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+
+            android:elevation="4dp"
+            android:background="@drawable/email_text_shape"
+
+            android:autofillHints="@string/email"
+
+            android:fontFamily="sans-serif-thin"
+            android:textSize="24sp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/password"
+
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_below="@id/username"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:layout_centerHorizontal="true"
+
+            android:hint="@string/password"
+
+            android:background="@drawable/email_text_shape"
+
+            android:inputType="textPassword"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-thin"
+            android:elevation="4dp"
+            android:autofillHints="@string/password" />
+
+        <Button
+            android:id="@+id/signUpButton"
+
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginRight="16dp"
+
+            android:background="@drawable/login_button_shape"
+            android:gravity="center"
+            android:soundEffectsEnabled="false"
+
+            android:text="@string/sign_up"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+
+            android:text="@string/i_am_already_member"
+            android:textSize="18sp"
+            android:textColor="#CF268C"
+            android:gravity="center"/>
+    </RelativeLayout>
+</ScrollView>
